@@ -3,9 +3,18 @@
 // --------------------------------------------------
 #navbar {
   .navbar-bar {
-    // Navbar Bar  
+    // Navbar Bar 
+    position: absolute;
   }
   .navbar-tray {
     // Navbar Tray
   }
+}
+
+.menu-tray-open {
+  padding-left: 0 !important;
+}
+
+.menu-tray-open .container {
+  width: 100%;
 }
