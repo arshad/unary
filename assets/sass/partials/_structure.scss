@@ -2,3 +2,194 @@
 // Structure
 // Styles for Tabs, Messages, ..etc
 // --------------------------------------------------
+
+// Navbar
+// --------------------------------------------------
+.drupal-navbar {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  .navbar-bar {
+    background: $blueDark;
+    color: $white;
+    min-height: 50px;
+    @include box-shadow(none);
+    .navbar-tab {
+      > a {
+        font-weight: normal;
+        display: block;
+        padding: 18px 20px 18px 50px;
+        font-size: 1.1em;
+        text-transform: capitalize;
+        &:hover, &:focus, &.active {
+          background-color: $blue;
+        }
+        &:before {
+          width: auto;
+          background: none;
+          font-family: FontAwesome;
+          font-size: 24px;
+          line-height: 50px;
+          left: 20px;
+        }
+        &.navbar-icon-home {
+          &:before {
+            content: "\f015";
+          }
+        }
+        &.navbar-icon-menu {
+          &:before {
+            content: "\f0c9";
+          }
+        }
+        &.navbar-icon-shortcut {
+          &:before {
+            content: "\f02e";
+          }
+        }
+        &.navbar-icon-user {
+          &:before {
+            content: "\f007";
+          }
+        }
+      }
+    }
+  }
+  .navbar-tray {
+    .navbar-lining {
+      border: none;
+      background-color: $grayLight;
+      &:before {
+        border: none;
+        @include box-shadow(none);
+      }
+      ul.root {
+        li.level-1 {
+          border: none;
+          > .navbar-box {
+            a {
+              display: block;
+              font-size: 1.4em;
+              color: lighten($gray, 30);
+              padding: 20px 25px 20px 50px;
+              text-decoration: none;
+              &:hover {
+                color: $gray;
+              }
+              &:before {
+                width: 50px;
+                left: 0px;
+              }
+            }
+            .navbar-handle {
+              &:active, &:focus {
+                outline: none;
+              }
+            }
+          }
+          &.active-trail {
+            a {
+              font-weight: normal;
+              color: $gray;
+            }
+          }
+          &.open {
+            background-color: $white;
+            > ul {
+              margin: 0;
+              padding-left: 50px;
+              padding-bottom: 25px;
+              li {
+                .navbar-handle {
+                  &:active, &:focus {
+                    outline: none;
+                  }
+                }
+                a {
+                  padding: 7px 0;
+                  font-size: 1.15em;
+                }
+              }
+              ul {
+                margin: 0 0 1.5em;
+                border: none;
+                background: none;
+                li {
+                  a {
+                    font-size: 0.95em;
+                    &.active {
+                      font-weight: bold;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.navbar-tray-horizontal {
+      border: none;
+      @include box-shadow(none);
+      ul.root {
+        li.level-1 {
+          .navbar-box {
+            > a {
+              font-size: 1.2em;
+              padding-top: 15px;
+              padding-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .navbar-toggle-orientation {
+    button {
+      height: 24px;
+      &:focus, &:active {
+        outline: none;
+      }
+    }
+  }
+}
+
+/**
+ * At larger screen sizes, the tray pushes the page content.
+ */
+@media only screen and (min-width: 38.125em) {
+  body.navbar-tray-open.navbar-vertical {
+    margin-left: 280px; /* LTR */
+    margin-left: 17rem; /* LTR */
+  }
+}
+
+@media only screen and (min-width: 16.5em) {
+  .drupal-navbar .navbar-tray-vertical,
+  .drupal-navbar .navbar-tray-vertical > .navbar-lining:before {
+    width: 280px;
+    width: 17rem;
+  }
+  .drupal-navbar .navbar-tray-vertical.active > .navbar-lining:before {
+    display: block;
+    left: -1px; /* LTR */
+  }
+}
+
+@media only screen and (min-width: 16.5em) {
+  .drupal-navbar .navbar-bar .navbar-tab > a {
+    padding: 25px 2px 25px 0;
+    text-indent: 0;
+    span {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 36em) {
+  .drupal-navbar .navbar-bar .navbar-tab > a {
+    padding: 18px 20px 18px 50px;
+    text-indent: 0;
+    span {
+      display: inline;
+    }
+  }
+}

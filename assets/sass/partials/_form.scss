@@ -2,3 +2,92 @@
 // Layout
 // Styles for Forms
 // --------------------------------------------------
+
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0 18px;
+  height: 42px;
+  line-height: 41px;
+  letter-spacing: .01em;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: none !important;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: $asphalt;
+  border: none;
+  color: $white;
+  @include border-radius(3px);
+  &:hover {
+    color: $white;
+    background: $asphaltDark;
+  }
+  &.btn-primary {
+    background: $blue;
+    &:hover {
+      background: $blueDark;
+    }
+  }
+  &.btn-success {
+    background: $green;
+    &:hover {
+      background: $greenDark;
+    }
+  }
+}
+
+form {
+  .form-item {
+    width: 100%;
+    max-width: 550px;
+    position: relative;
+    margin: 0 0 30px 0;
+  }
+  label {
+    font-weight: 500;
+    display: block;
+    padding-bottom: .4em;
+    max-width: 550px;
+    color: $asphaltDark;
+    margin-bottom: 0;
+  }
+  select,
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="url"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="color"],
+  .uneditable-input {
+    min-height: 36px;
+    background-color: $white;
+    border: 1px solid $grayLight;
+    padding: 0 .4em 0 .4em;
+    @include border-radius(3px);
+    @include box-shadow(none);
+  }
+  select {
+    @include appearance(none);
+    background: $asphalt;
+    color: $white;
+    font-size: 14px;
+    line-height: 20px;
+    &:hover, &:focus, &:active {
+      background: $asphaltDark;
+    }
+    &:after {
+    }
+  }
+}
+

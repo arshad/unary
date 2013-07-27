@@ -8,25 +8,29 @@
 
 // Grays
 // -------------------------
-$black:                 #000 !default;
-$grayDarker:            #222 !default;
-$grayDark:              #333 !default;
-$gray:                  #555 !default;
-$grayLight:             #999 !default;
-$grayLighter:           #eee !default;
-$white:                 #fff !default;
+$black:                 #000000 !default;
+$grayDarker:            #222222 !default;
+$grayDark:              #333333 !default;
+$gray:                  #555555 !default;
+$grayLight:             #f2f2f2 !default;
+$grayLighter:           #eeeeee !default;
+$white:                 #ffffff !default;
 
 
 // Accent colors
 // -------------------------
-$blue:                  #049cdb !default;
-$blueDark:              #0064cd !default;
-$green:                 #46a546 !default;
-$red:                   #9d261d !default;
+$blue:                  #3498db !default;
+$blueDark:              #2980b9 !default;
+$green:                 #1abc9c !default;
+$greenDark:             #16a085 !default;
+$red:                   #c0392b !default;
+$redDark:               #c0392b !default;
 $yellow:                #ffc40d !default;
 $orange:                #f89406 !default;
 $pink:                  #c3325f !default;
 $purple:                #7a43b6 !default;
+$asphalt:               #34495e !default;
+$asphaltDark:           #2c3e50 !default;
 
 
 // Scaffolding
