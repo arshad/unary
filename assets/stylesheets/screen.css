@@ -14268,29 +14268,84 @@ html.js input.throbbing {
   display: block;
   font-size: 1.4em;
   color: #a2a2a2;
-  padding: 20px 25px 20px 50px;
+  padding: 20px 25px 20px 60px;
   text-decoration: none;
 }
 .drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1 > .navbar-box a:hover {
   color: #555555;
 }
+.drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1 > .navbar-box a:hover:before {
+  color: #555555;
+}
 .drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1 > .navbar-box a:before {
-  width: 50px;
+  background: none;
+  font-family: FontAwesome;
+  font-size: 20px;
+  line-height: 60px;
   left: 0px;
+  display: block;
+  width: 60px;
+  text-align: center;
+  color: #a2a2a2;
+}
+.drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1 > .navbar-box a.navbar-icon-apps:before {
+  content: "\f00a";
+}
+.drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1 > .navbar-box a.navbar-icon-content:before {
+  content: "\f022";
+}
+.drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1 > .navbar-box a.navbar-icon-panopoly:before {
+  content: "\f0d0";
+}
+.drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1 > .navbar-box a.navbar-icon-structure:before {
+  content: "\f0e8";
+}
+.drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1 > .navbar-box a.navbar-icon-appearance:before {
+  content: "\f06e";
+}
+.drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1 > .navbar-box a.navbar-icon-people:before {
+  content: "\f0c0";
+}
+.drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1 > .navbar-box a.navbar-icon-modules:before {
+  content: "\f0e8";
+}
+.drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1 > .navbar-box a.navbar-icon-configuration:before {
+  content: "\f0ad";
+}
+.drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1 > .navbar-box a.navbar-icon-reports:before {
+  content: "\f016";
 }
 .drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1 > .navbar-box .navbar-handle:active, .drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1 > .navbar-box .navbar-handle:focus {
   outline: none;
+}
+.drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1 > .navbar-box .navbar-handle:before {
+  background: none;
+  font-family: FontAwesome;
+  font-size: 20px;
+  line-height: 60px;
+  left: 0px;
+  display: block;
+  text-align: center;
+  color: #555555;
+  content: "\f105";
+  text-indent: 0;
 }
 .drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1.active-trail a {
   font-weight: normal;
   color: #555555;
 }
+.drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1.active-trail a:before {
+  color: #555555;
+}
 .drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1.open {
   background-color: white;
 }
+.drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1.open .navbar-handle:before {
+  content: "\f107";
+}
 .drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1.open > ul {
-  margin: 0;
-  padding-left: 50px;
+  margin: -10px 0 0;
+  padding-left: 60px;
   padding-bottom: 25px;
 }
 .drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1.open > ul li .navbar-handle:active, .drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1.open > ul li .navbar-handle:focus {

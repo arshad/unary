@@ -81,19 +81,86 @@
               display: block;
               font-size: 1.4em;
               color: lighten($gray, 30);
-              padding: 20px 25px 20px 50px;
+              padding: 20px 25px 20px 60px;
               text-decoration: none;
               &:hover {
                 color: $gray;
+                &:before {
+                  color: $gray;
+                }
               }
               &:before {
-                width: 50px;
+                background: none;
+                font-family: FontAwesome;
+                font-size: 20px;
+                line-height: 60px;
                 left: 0px;
+                display: block;
+                width: 60px;
+                text-align: center;
+                color: lighten($gray, 30);
+              }
+              &.navbar-icon-apps {
+                &:before {
+                  content: "\f00a";
+                }
+              }
+              &.navbar-icon-content {
+                &:before {
+                  content: "\f022";
+                }
+              }
+              &.navbar-icon-panopoly {
+                &:before {
+                  content: "\f0d0";
+                }
+              }
+              &.navbar-icon-structure {
+                &:before {
+                  content: "\f0e8";
+                }
+              }
+              &.navbar-icon-appearance {
+                &:before {
+                  content: "\f06e";
+                }
+              }
+              &.navbar-icon-people {
+                &:before {
+                  content: "\f0c0";
+                }
+              }
+              &.navbar-icon-modules {
+                &:before {
+                  content: "\f0e8";
+                }
+              }
+              &.navbar-icon-configuration {
+                &:before {
+                  content: "\f0ad";
+                }
+              }
+              &.navbar-icon-reports {
+                &:before {
+                  content: "\f016";
+                }
               }
             }
             .navbar-handle {
               &:active, &:focus {
                 outline: none;
+              }
+              &:before {
+                background: none;
+                font-family: FontAwesome;
+                font-size: 20px;
+                line-height: 60px;
+                left: 0px;
+                display: block;
+                text-align: center;
+                color: $gray;
+                content: "\f105";
+                text-indent: 0;
               }
             }
           }
@@ -101,13 +168,21 @@
             a {
               font-weight: normal;
               color: $gray;
+              &:before {
+                color: $gray;
+              }
             }
           }
           &.open {
             background-color: $white;
+            .navbar-handle {
+              &:before {
+                content: "\f107";
+              }
+            }
             > ul {
-              margin: 0;
-              padding-left: 50px;
+              margin: -10px 0 0;
+              padding-left: 60px;
               padding-bottom: 25px;
               li {
                 .navbar-handle {
