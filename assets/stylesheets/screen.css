@@ -14376,6 +14376,11 @@ html.js input.throbbing {
   font-size: 1.2em;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 50px;
+}
+.drupal-navbar .navbar-tray.navbar-tray-horizontal ul.root li.level-1 .navbar-box > a:before {
+  line-height: 48px;
+  width: 50px;
 }
 .drupal-navbar .navbar-toggle-orientation button {
   height: 24px;

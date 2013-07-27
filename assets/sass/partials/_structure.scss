@@ -223,6 +223,11 @@
               font-size: 1.2em;
               padding-top: 15px;
               padding-bottom: 15px;
+              padding-left: 50px;
+              &:before {
+                line-height: 48px;
+                width: 50px;
+              }
             }
           }
         }
