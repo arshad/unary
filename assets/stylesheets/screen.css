@@ -14210,6 +14210,10 @@ html.js input.throbbing {
   border-radius: 0;
 }
 
+h1.page-title {
+  margin: 1em 0;
+}
+
 .drupal-navbar {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
