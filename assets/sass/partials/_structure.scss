@@ -3,6 +3,18 @@
 // Styles for Tabs, Messages, ..etc
 // --------------------------------------------------
 
+// Messages
+#messages {
+  margin: -25px -25px 18px;
+  .messages {
+    border: none;
+    padding: 15px 25px;
+    margin: 0;
+    @include box-shadow(none);
+    @include border-radius(0);
+  }
+}
+
 // Navbar
 // --------------------------------------------------
 .drupal-navbar {
@@ -191,5 +203,21 @@
     span {
       display: inline;
     }
+  }
+}
+
+// Admin List
+// --------------------------------------------------
+dl.admin-list {
+  dt {
+    border-top: 1px solid $grayLighter;
+    padding-top: 12px;
+    font-size: 1.2em;
+    line-height: 120%;
+  }
+  dd {
+    color: $gray;
+    margin: 0;
+    padding-bottom: 12px;
   }
 }

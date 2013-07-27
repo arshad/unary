@@ -1,4 +1,7 @@
 <div id="main-wrapper" class="container-fluid">
+  <?php if ($messages): ?>
+    <div id="messages" class="clearfix"><?php print $messages; ?></div>
+  <?php endif; ?>
   <div id="branding" class="clearfix">
     <?php print $breadcrumb; ?>
     <?php print render($title_prefix); ?>
@@ -16,9 +19,6 @@
 
     <div id="content" class="clearfix">
       <div class="element-invisible"><a id="main-content"></a></div>
-      <?php if ($messages): ?>
-        <div id="console" class="clearfix"><?php print $messages; ?></div>
-      <?php endif; ?>
       <?php if ($page['help']): ?>
         <div id="help">
           <?php print render($page['help']); ?>
