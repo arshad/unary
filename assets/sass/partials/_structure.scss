@@ -186,6 +186,14 @@ h1.page-title {
                 content: "\f107";
               }
             }
+            .navbar-box {
+              a {
+                color: $gray;
+                &:before {
+                  color: $gray;
+                }
+              }
+            }
             > ul {
               margin: -10px 0 0;
               padding-left: 60px;

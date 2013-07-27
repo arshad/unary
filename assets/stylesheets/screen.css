@@ -14347,6 +14347,12 @@ h1.page-title {
 .drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1.open .navbar-handle:before {
   content: "\f107";
 }
+.drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1.open .navbar-box a {
+  color: #555555;
+}
+.drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1.open .navbar-box a:before {
+  color: #555555;
+}
 .drupal-navbar .navbar-tray .navbar-lining ul.root li.level-1.open > ul {
   margin: -10px 0 0;
   padding-left: 60px;
