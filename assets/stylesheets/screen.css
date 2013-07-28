@@ -14501,6 +14501,76 @@ ul.action-links li a {
   color: #2c3e50;
 }
 
+.views-exposed-form {
+  background-color: white;
+  padding: 10px 18px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.views-exposed-form .views-exposed-widget .views-widget .form-item {
+  border: 0;
+  margin: 0 0 10px;
+  padding: 0;
+}
+.views-exposed-form .views-submit-button {
+  clear: left;
+}
+.views-exposed-form .views-submit-button,
+.views-exposed-form .views-reset-button {
+  padding: 0.5em 0.5em 0 0 !important;
+}
+.views-exposed-form .views-submit-button input.form-submit,
+.views-exposed-form .views-reset-button input.form-submit {
+  margin: 0;
+}
+
+.view-admin-views-node .vbo-views-form form .form-item-operation,
+.view-admin-views-file .vbo-views-form form .form-item-operation {
+  margin: 0 10px 0 0;
+  padding: 0;
+  border: none;
+  display: inline-block;
+  width: auto;
+}
+.view-admin-views-node .vbo-views-form form input.form-submit,
+.view-admin-views-file .vbo-views-form form input.form-submit {
+  font-size: 12px;
+  padding: 0 15px;
+  height: 30px;
+  line-height: 30px;
+}
+.view-admin-views-node .view-content table,
+.view-admin-views-file .view-content table {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  margin: 30px 0;
+}
+.view-admin-views-node .view-content table .form-item,
+.view-admin-views-file .view-content table .form-item {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.view-admin-views-node .view-content table thead th,
+.view-admin-views-file .view-content table thead th {
+  padding: 15px 10px;
+}
+.view-admin-views-node .view-content table tbody tr,
+.view-admin-views-file .view-content table tbody tr {
+  background: none;
+  border: none;
+}
+.view-admin-views-node .view-content table tbody tr td,
+.view-admin-views-file .view-content table tbody tr td {
+  border-top: 1px solid #eeeeee;
+  padding: 15px 10px;
+}
+.view-admin-views-node .view-content table tbody tr td.active,
+.view-admin-views-file .view-content table tbody tr td.active {
+  background-color: #eeeeee;
+}
+
 .btn {
   display: inline-block;
   font-size: 15px;
@@ -14537,6 +14607,12 @@ ul.action-links li a {
 .btn.btn-success:hover {
   background: #16a085;
 }
+.btn.btn-small {
+  font-size: 12px;
+  padding: 0 15px;
+  height: 30px;
+  line-height: 30px;
+}
 
 form .form-item,
 form .field-type-text-with-summary {
@@ -14558,10 +14634,18 @@ form .field-type-text-with-summary .format-toggle .form-item {
   margin: 0;
   padding: 0;
 }
+form .form-item .form-item,
+form .form-type-radios .form-item,
+form .form-type-checkboxes .form-item,
+form table .form-item {
+  margin: 0 0 10px;
+  padding: 0;
+  border: none;
+}
 form input,
 form textarea,
 form .uneditable-input {
-  width: 90%;
+  width: 80%;
 }
 form label {
   font-weight: 500;
@@ -14599,8 +14683,55 @@ form .uneditable-input {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+form fieldset legend .fieldset-legend {
+  position: relative;
+  background: none !important;
+  padding: 0 !important;
+}
+form fieldset legend .fieldset-legend:hover:before {
+  color: #3498db;
+}
+form fieldset legend .fieldset-legend a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+form fieldset legend .fieldset-legend a:hover {
+  color: #3498db;
+}
+form fieldset.collapsible .fieldset-legend:before {
+  background: none;
+  font-family: FontAwesome;
+  font-size: 14px;
+  line-height: 30px;
+  left: 0px;
+  width: 20px;
+  display: inline-block;
+  text-align: center;
+  color: #555555;
+  content: "\f0da";
+  text-indent: 0;
+  margin: 0;
+}
+form fieldset.collapsed .fieldset-legend:before {
+  content: "\f0d7";
+}
 form .form-actions {
   padding: 18px 0;
   border: 0;
   background: none;
+}
+
+div.vertical-tabs ul.vertical-tabs-list li a strong {
+  color: #34495e;
+}
+div.vertical-tabs ul.vertical-tabs-list li a span {
+  font-size: 0.85em;
+  color: #34495e;
+}
+div.vertical-tabs ul.vertical-tabs-list li a:hover {
+  background-color: #f2f2f2;
+  color: #34495e;
+}
+div.vertical-tabs ul.vertical-tabs-list li a:hover strong {
+  color: #34495e;
 }
