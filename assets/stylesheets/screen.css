@@ -14195,6 +14195,10 @@ html.js input.throbbing {
   padding: 25px;
 }
 
+.panel-display.container {
+  width: auto;
+}
+
 #messages {
   margin: -25px -25px 18px;
 }
@@ -14210,15 +14214,19 @@ html.js input.throbbing {
   border-radius: 0;
 }
 
+.title-wrapper {
+  margin: 0 0 30px;
+}
+
 h1.page-title {
-  margin: 1em 0;
+  margin: 0;
 }
 
 .drupal-navbar {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .drupal-navbar .navbar-bar {
-  background: #2980b9;
+  background: #2c3e50;
   color: white;
   min-height: 50px;
   -webkit-box-shadow: none;
@@ -14228,20 +14236,20 @@ h1.page-title {
 .drupal-navbar .navbar-bar .navbar-tab > a {
   font-weight: normal;
   display: block;
-  padding: 18px 20px 18px 50px;
+  padding: 18px 15px 18px 40px;
   font-size: 1.1em;
   text-transform: capitalize;
 }
 .drupal-navbar .navbar-bar .navbar-tab > a:hover, .drupal-navbar .navbar-bar .navbar-tab > a:focus, .drupal-navbar .navbar-bar .navbar-tab > a.active {
-  background-color: #3498db;
+  background-color: #34495e;
 }
 .drupal-navbar .navbar-bar .navbar-tab > a:before {
   width: auto;
   background: none;
   font-family: FontAwesome;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 50px;
-  left: 20px;
+  left: 15px;
 }
 .drupal-navbar .navbar-bar .navbar-tab > a.navbar-icon-home:before {
   content: "\f015";
@@ -14425,32 +14433,72 @@ h1.page-title {
 }
 @media only screen and (min-width: 16.5em) {
   .drupal-navbar .navbar-bar .navbar-tab > a {
-    padding: 25px 2px 25px 0;
+    padding: 25px 0;
     text-indent: 0;
   }
   .drupal-navbar .navbar-bar .navbar-tab > a span {
     display: none;
   }
+  .drupal-navbar .navbar-bar .navbar-tab > a:before {
+    left: 20px;
+  }
 }
 @media only screen and (min-width: 36em) {
   .drupal-navbar .navbar-bar .navbar-tab > a {
-    padding: 18px 20px 18px 50px;
+    padding: 18px 15px 18px 40px;
     text-indent: 0;
   }
   .drupal-navbar .navbar-bar .navbar-tab > a span {
     display: inline;
   }
+  .drupal-navbar .navbar-bar .navbar-tab > a:before {
+    left: 15px;
+  }
 }
-dl.admin-list dt {
+dl.admin-list dt,
+dl.node-type-list dt {
   border-top: 1px solid #eeeeee;
   padding-top: 12px;
   font-size: 1.2em;
   line-height: 120%;
 }
-dl.admin-list dd {
+dl.admin-list dd,
+dl.node-type-list dd {
   color: #555555;
   margin: 0;
   padding-bottom: 12px;
+}
+
+ul.action-links {
+  margin: 0;
+}
+ul.action-links li a {
+  padding: 0 18px;
+  line-height: 41px;
+}
+
+.tabs {
+  float: none;
+  clear: both;
+}
+.tabs ul.primary {
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 12px 0;
+}
+.tabs ul.primary li {
+  margin: 0;
+}
+.tabs ul.primary li a {
+  border-color: white;
+  font-size: 1.3em;
+  line-height: 120%;
+  padding: 5px 25px 5px 0;
+}
+.tabs ul.primary li a:hover {
+  border-color: white;
+  background-color: white;
+  color: #2c3e50;
 }
 
 .btn {
@@ -14490,11 +14538,30 @@ dl.admin-list dd {
   background: #16a085;
 }
 
-form .form-item {
+form .form-item,
+form .field-type-text-with-summary {
   width: 100%;
-  max-width: 550px;
   position: relative;
-  margin: 0 0 30px 0;
+  margin: 0 0 30px;
+  padding: 0 0 30px;
+  border-bottom: 1px solid #f2f2f2;
+}
+form .field-type-text-with-summary .form-item {
+  border-bottom: none;
+  margin: 0 0 15px;
+  padding: 0 0 15px;
+}
+form .field-type-text-with-summary .format-toggle {
+  margin: 0;
+}
+form .field-type-text-with-summary .format-toggle .form-item {
+  margin: 0;
+  padding: 0;
+}
+form input,
+form textarea,
+form .uneditable-input {
+  width: 90%;
 }
 form label {
   font-weight: 500;
@@ -14523,7 +14590,7 @@ form input[type="color"],
 form .uneditable-input {
   min-height: 36px;
   background-color: white;
-  border: 1px solid #f2f2f2;
+  border: 1px solid #d8d8d8;
   padding: 0 .4em 0 .4em;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -14532,15 +14599,8 @@ form .uneditable-input {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-form select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: #34495e;
-  color: white;
-  font-size: 14px;
-  line-height: 20px;
-}
-form select:hover, form select:focus, form select:active {
-  background: #2c3e50;
+form .form-actions {
+  padding: 18px 0;
+  border: 0;
+  background: none;
 }

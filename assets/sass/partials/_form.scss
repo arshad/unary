@@ -39,11 +39,32 @@
 }
 
 form {
-  .form-item {
+  .form-item,
+  .field-type-text-with-summary {
     width: 100%;
-    max-width: 550px;
     position: relative;
-    margin: 0 0 30px 0;
+    margin: 0 0 30px;
+    padding: 0 0 30px;
+    border-bottom: 1px solid $grayLight;
+  }
+  .field-type-text-with-summary {
+    .form-item {
+      border-bottom: none;
+      margin: 0 0 15px;
+      padding: 0 0 15px;
+    }
+    .format-toggle {
+      margin: 0;
+      .form-item {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  input, 
+  textarea, 
+  .uneditable-input {
+    width: 90%;
   }
   label {
     font-weight: 500;
@@ -72,22 +93,15 @@ form {
   .uneditable-input {
     min-height: 36px;
     background-color: $white;
-    border: 1px solid $grayLight;
+    border: 1px solid darken($grayLight, 10);
     padding: 0 .4em 0 .4em;
     @include border-radius(3px);
     @include box-shadow(none);
   }
-  select {
-    @include appearance(none);
-    background: $asphalt;
-    color: $white;
-    font-size: 14px;
-    line-height: 20px;
-    &:hover, &:focus, &:active {
-      background: $asphaltDark;
-    }
-    &:after {
-    }
+  .form-actions {
+    padding: 18px 0;
+    border: 0;
+    background: none;
   }
 }
 

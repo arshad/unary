@@ -17,8 +17,11 @@
 
 // Page Title
 // --------------------------------------------------
+.title-wrapper {
+  margin: 0 0 30px;
+}
 h1.page-title {
-  margin: 1em 0;
+  margin: 0;
 }
 
 // Navbar
@@ -26,7 +29,7 @@ h1.page-title {
 .drupal-navbar {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   .navbar-bar {
-    background: $blueDark;
+    background: $asphaltDark;
     color: $white;
     min-height: 50px;
     @include box-shadow(none);
@@ -34,19 +37,19 @@ h1.page-title {
       > a {
         font-weight: normal;
         display: block;
-        padding: 18px 20px 18px 50px;
+        padding: 18px 15px 18px 40px;
         font-size: 1.1em;
         text-transform: capitalize;
         &:hover, &:focus, &.active {
-          background-color: $blue;
+          background-color: $asphalt;
         }
         &:before {
           width: auto;
           background: none;
           font-family: FontAwesome;
-          font-size: 24px;
+          font-size: 20px;
           line-height: 50px;
-          left: 20px;
+          left: 15px;
         }
         &.navbar-icon-home {
           &:before {
@@ -282,27 +285,34 @@ h1.page-title {
 
 @media only screen and (min-width: 16.5em) {
   .drupal-navbar .navbar-bar .navbar-tab > a {
-    padding: 25px 2px 25px 0;
+    padding: 25px 0;
     text-indent: 0;
     span {
       display: none;
+    }
+    &:before {
+      left: 20px;
     }
   }
 }
 
 @media only screen and (min-width: 36em) {
   .drupal-navbar .navbar-bar .navbar-tab > a {
-    padding: 18px 20px 18px 50px;
+    padding: 18px 15px 18px 40px;
     text-indent: 0;
     span {
       display: inline;
+    }
+    &:before {
+      left: 15px;
     }
   }
 }
 
 // Admin List
 // --------------------------------------------------
-dl.admin-list {
+dl.admin-list,
+dl.node-type-list {
   dt {
     border-top: 1px solid $grayLighter;
     padding-top: 12px;
@@ -313,5 +323,43 @@ dl.admin-list {
     color: $gray;
     margin: 0;
     padding-bottom: 12px;
+  }
+}
+
+// Action Links
+// --------------------------------------------------
+ul.action-links {
+  margin: 0;
+  li {
+    a {
+      padding: 0 18px;
+      line-height: 41px;
+    }
+  }
+}
+
+// Tabs
+// --------------------------------------------------
+.tabs {
+  float: none;
+  clear: both;
+  ul.primary {
+    border-top: 1px solid $grayLight;
+    border-bottom: 1px solid $grayLight;
+    padding: 12px 0;
+    li {
+      margin: 0;
+      a {
+        border-color: $white;
+        font-size: 1.3em;
+        line-height: 120%;
+        padding: 5px 25px 5px 0;
+        &:hover {
+          border-color: $white;
+          background-color: $white;
+          color: $asphaltDark;
+        }
+      }
+    }
   }
 }

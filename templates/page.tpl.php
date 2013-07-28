@@ -4,20 +4,22 @@
   <?php endif; ?>
   <div id="branding" class="clearfix">
     <!-- <?php print $breadcrumb; ?> -->
-    <?php print render($title_prefix); ?>
-    <?php if ($title): ?>
-      <h1 class="page-title"><?php print $title; ?></h1>
-    <?php endif; ?>
-    <?php print render($title_suffix); ?>
+    <div class="title-wrapper clearfix">
+      <?php print render($title_prefix); ?>
+      <?php if ($title): ?>
+        <h1 class="page-title pull-left"><?php print $title; ?></h1>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
+      <?php if ($action_links): ?>
+        <ul class="nav nav-pills action-links pull-right">
+          <?php print render($action_links); ?>
+        </ul>
+      <?php endif; ?>
+    </div>
     <?php if ($tabs): ?>
       <div class="tabs">
         <?php print render($tabs); ?>
       </div>
-    <?php endif; ?>
-    <?php if ($action_links): ?>
-      <ul class="nav nav-pills action-links">
-        <?php print render($action_links); ?>
-      </ul>
     <?php endif; ?>
   </div>
 
@@ -29,7 +31,6 @@
           <?php print render($page['help']); ?>
         </div>
       <?php endif; ?>
-      <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
       <?php print render($page['content']); ?>
     </div>
 
