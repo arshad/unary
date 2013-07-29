@@ -5,7 +5,7 @@
 // Views Exposed Form
 // --------------------------------------------------
 .views-exposed-form {
-  background-color: lighten($grayLighter, 10);
+  background-color: $grayLighter;
   padding: 10px 18px;
   @include border-radius(5px);
   .views-exposed-widget {
@@ -32,7 +32,8 @@
 // Admin Views Node
 // --------------------------------------------------
 .view-admin-views-node,
-.view-admin-views-file {
+.view-admin-views-file,
+[class*="view-admin-views"] {
   .vbo-views-form {
     form {
       .form-item-operation {
