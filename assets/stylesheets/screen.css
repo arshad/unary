@@ -9292,6 +9292,22 @@ form .uneditable-input {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+form fieldset {
+  border: 1px solid #f2f2f2;
+  padding: 20px;
+  margin: 0 0 30px;
+}
+form fieldset legend {
+  border: none;
+  background: none;
+  margin: 0;
+  display: inline;
+  width: auto;
+  padding: 0 5px;
+  margin-left: -5px;
+  font-size: 18px;
+  line-height: 25px;
+}
 form fieldset legend .fieldset-legend {
   position: relative;
   background: none !important;
@@ -9310,7 +9326,11 @@ form fieldset legend .fieldset-legend a:hover {
 form fieldset .fieldset-description {
   color: #555555;
   position: relative;
-  top: -10px;
+  top: -15px;
+}
+form fieldset .fieldset-wrapper > .form-item:last-child {
+  margin-bottom: 0;
+  border: 0;
 }
 form fieldset.collapsible .fieldset-legend:before {
   background: none;

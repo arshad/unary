@@ -112,7 +112,19 @@ form {
     @include box-shadow(none);
   }
   fieldset {
+    border: 1px solid $grayLight;
+    padding: 20px;
+    margin: 0 0 30px;
     legend {
+      border: none;
+      background: none;
+      margin: 0;
+      display: inline;
+      width: auto;
+      padding: 0 5px;
+      margin-left: -5px;
+      font-size: 18px;
+      line-height: 25px;
       .fieldset-legend {
         position: relative;
         background: none !important;
@@ -134,7 +146,15 @@ form {
     .fieldset-description {
       color: $gray;
       position: relative;
-      top: -10px;
+      top: -15px;
+    }
+    .fieldset-wrapper {
+      > .form-item {
+        &:last-child {
+          margin-bottom: 0;
+          border: 0;
+        }
+      }
     }
     &.collapsible {
       .fieldset-legend {
