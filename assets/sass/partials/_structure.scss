@@ -335,6 +335,9 @@ ul.action-links {
     a {
       padding: 0 18px;
       line-height: 41px;
+      &:hover {
+        background: $asphaltDark;
+      }
     }
   }
 }

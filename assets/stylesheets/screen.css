@@ -9068,6 +9068,9 @@ ul.action-links li a {
   padding: 0 18px;
   line-height: 41px;
 }
+ul.action-links li a:hover {
+  background: #2c3e50;
+}
 
 .tabs {
   float: none;
