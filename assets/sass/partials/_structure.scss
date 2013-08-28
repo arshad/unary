@@ -4,6 +4,7 @@
 // --------------------------------------------------
 
 // Messages
+// --------------------------------------------------
 #messages {
   margin: -25px -25px 18px;
   .messages {
@@ -362,4 +363,12 @@ ul.action-links {
       }
     }
   }
+}
+
+// Breadcrumbs
+// --------------------------------------------------
+.breadcrumb {
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
 }

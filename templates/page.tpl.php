@@ -3,7 +3,7 @@
     <div id="messages" class="clearfix"><?php print $messages; ?></div>
   <?php endif; ?>
   <div id="branding" class="clearfix">
-    <!-- <?php print $breadcrumb; ?> -->
+    <?php print $breadcrumb; ?>
     <div class="title-wrapper clearfix">
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
