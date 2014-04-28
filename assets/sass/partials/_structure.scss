@@ -1,3 +1,101 @@
 //
 // Styles for Tabs, Messages, ..etc
 // --------------------------------------------------
+
+// Drupal Navbar - Bar
+// --------------------------------------------------
+.drupal-navbar .navbar-bar {
+  background: white;
+  border-bottom: 1px solid $gray-lighter;
+  .navbar-tab {
+    border: none;
+    border-left: 1px solid $gray-lighter;
+    > a {
+        padding: 15px 15px;
+        font-size: 14px;
+        background: white;
+        color: $text-color;
+        font-weight: normal;
+        border: 0;
+        @include transition(all 0.2s ease-out 0s);
+        &:hover, &:focus, &.active, &.active-trail {
+          background: #f9f9f9;
+        }
+        .fa {
+          vertical-align: middle;
+          margin-top: -2px;
+        }
+    }
+  }
+}
+.drupal-navbar .navbar-toggle-orientation {
+  background: #1d2939;
+}
+
+// Drupal Navbar - Tray
+// --------------------------------------------------
+.drupal-navbar .navbar-tray.navbar-tray-vertical {
+  > .navbar-lining {
+    background: #1d2939;
+    color: #636e7b;
+    border: none;
+  }
+}
+.drupal-navbar .navbar-tray {
+  a, .navbar-handle {
+    color: #636e7b;
+  }
+  .menu li + li {
+    border: 0;    
+  }
+  .root {
+    li.level-1 {
+      border: 0 !important;
+      > .navbar-box > a {
+        padding: 15px 20px;
+        border: 0;
+        &:hover, &:focus {
+          background-color: white;
+          color: $text-color;
+          text-decoration: none;
+          .navbar-handle {
+            color: $text-color;
+          }
+        }
+      }
+      &.open {
+        > .navbar-box > a {
+          background-color: white;
+          color: $text-color;
+          .navbar-handle {
+            color: $text-color;
+          }
+        }
+      }
+      &.active-trail {
+        > .navbar-box > a {
+          background-color: $brand-primary;
+          color: white;
+        }
+        .navbar-handle {
+          color: white;
+        }
+      }
+    }
+    ul {
+      margin: 0;
+    }
+  }
+}
+
+// Breadcrumb
+// --------------------------------------------------
+.breadcrumb {
+  margin: 0 0 10px;
+  display: inline-block;
+  padding: 0;
+  font-size: 12px;
+  > li {
+    display: inline-block;
+  }
+}

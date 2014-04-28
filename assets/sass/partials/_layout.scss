@@ -1,3 +1,47 @@
 //
 // Styles for main layout
 // --------------------------------------------------
+
+// Page header
+// --------------------------------------------------
+#page-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d3d7db;
+  border-top: 1px solid #eee;
+  background: #f7f7f7;
+  > .container {
+    position: relative;
+  }
+  h1 {
+    font-size: 28px;
+    color: #1D2939;
+    letter-spacing: -0.5px;
+    margin: 0;
+  }
+  .nav-tabs {
+    margin: 0;
+    position: absolute;
+    bottom: -16px;
+    right: 0;
+  }
+}
+
+// Tabs wrapper
+// --------------------------------------------------
+#tabs-wrapper {
+  padding-top: 15px;
+  .action-links {
+    margin: 0;
+    float: left;
+  }
+  ul.secondary {
+    float: right;
+    margin: 0;
+  }
+}
+
+#main {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}

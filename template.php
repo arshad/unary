@@ -34,4 +34,15 @@ function unary_preprocess_page(&$variables) {
   if ($copyright = theme_get_setting('copyright')) {
     $variables['copyright'] = check_markup($copyright['value'], $copyright['format']);
   }
+
+  // Separate primary and secondary tabs.
+  $variables['primary_tabs'] = $variables['tabs'];
+  $variables['secondary_tabs'] = $variables['tabs'];
+  unset($variables['primary_tabs']['#secondary']);
+  unset($variables['secondary_tabs']['#primary']);
+
+  // Theme action links as buttons.
+  foreach ($variables['action_links'] as $key => &$link) {
+    $link['#link']['localized_options']['attributes'] = array('class' => array('btn', 'btn-primary', 'btn-md'));
+  }
 }
