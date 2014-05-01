@@ -10829,48 +10829,53 @@ html.js fieldset.collapsed {
 }
 
 /* line 7, ../sass/partials/_layout.scss */
+.container {
+  width: 100%;
+}
+
+/* line 13, ../sass/partials/_layout.scss */
 #page-header {
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #d3d7db;
   border-top: 1px solid #eee;
   background: #f7f7f7;
 }
-/* line 13, ../sass/partials/_layout.scss */
+/* line 19, ../sass/partials/_layout.scss */
 #page-header > .container {
   position: relative;
 }
-/* line 16, ../sass/partials/_layout.scss */
+/* line 22, ../sass/partials/_layout.scss */
 #page-header h1 {
   font-size: 28px;
   color: #1D2939;
   letter-spacing: -0.5px;
   margin: 0;
 }
-/* line 22, ../sass/partials/_layout.scss */
+/* line 28, ../sass/partials/_layout.scss */
 #page-header .nav-tabs {
   margin: 0;
   position: absolute;
-  bottom: -16px;
-  right: 0;
+  bottom: -11px;
+  right: 15px;
 }
 
-/* line 32, ../sass/partials/_layout.scss */
+/* line 38, ../sass/partials/_layout.scss */
 #tabs-wrapper {
   padding-top: 15px;
 }
-/* line 34, ../sass/partials/_layout.scss */
+/* line 40, ../sass/partials/_layout.scss */
 #tabs-wrapper .action-links {
   margin: 0;
   float: left;
 }
-/* line 38, ../sass/partials/_layout.scss */
+/* line 44, ../sass/partials/_layout.scss */
 #tabs-wrapper ul.secondary {
   float: right;
   margin: 0;
 }
 
-/* line 44, ../sass/partials/_layout.scss */
+/* line 50, ../sass/partials/_layout.scss */
 #main {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -10979,4 +10984,49 @@ html.js fieldset.collapsed {
 /* line 98, ../sass/partials/_structure.scss */
 .breadcrumb > li {
   display: inline-block;
+}
+
+/* line 105, ../sass/partials/_structure.scss */
+div.admin .left {
+  margin-left: 0;
+}
+
+/* line 108, ../sass/partials/_structure.scss */
+div.admin-panel {
+  padding: 0;
+  margin-bottom: 60px;
+}
+/* line 111, ../sass/partials/_structure.scss */
+div.admin-panel .body {
+  padding: 0;
+}
+
+/* line 116, ../sass/partials/_structure.scss */
+dl.admin-list dt {
+  margin-top: 15px;
+}
+
+/* line 123, ../sass/partials/_structure.scss */
+tbody {
+  border-top: none;
+}
+
+/* line 127, ../sass/partials/_structure.scss */
+tr.even,
+tr.odd {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* line 8, ../sass/partials/_view.scss */
+.views-exposed-form .views-submit-button,
+.views-exposed-form .views-reset-button {
+  margin-top: 0;
+  margin-right: 8px;
+}
+
+/* line 17, ../sass/partials/_view.scss */
+.vbo-views-form .fieldset-wrapper input {
+  margin-right: 10px;
 }

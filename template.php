@@ -36,10 +36,16 @@ function unary_preprocess_page(&$variables) {
   }
 
   // Separate primary and secondary tabs.
-  $variables['primary_tabs'] = $variables['tabs'];
-  $variables['secondary_tabs'] = $variables['tabs'];
-  unset($variables['primary_tabs']['#secondary']);
-  unset($variables['secondary_tabs']['#primary']);
+  if (isset($variables['tabs'])) {
+    $variables['primary_tabs'] = $variables['tabs'];
+    $variables['secondary_tabs'] = $variables['tabs'];
+    if (isset($variables['primary_tabs']['#secondary'])) {
+      unset($variables['primary_tabs']['#secondary']);
+    }
+    if (isset($variables['secondary_tabs']['#primary'])) {
+      unset($variables['secondary_tabs']['#primary']);
+    }
+  }
 
   // Theme action links as buttons.
   foreach ($variables['action_links'] as $key => &$link) {

@@ -99,3 +99,33 @@
     display: inline-block;
   }
 }
+
+// Admin list
+// --------------------------------------------------
+div.admin .left {
+  margin-left: 0;
+}
+div.admin-panel {
+  padding: 0;
+  margin-bottom: 60px;
+  .body {
+    padding: 0;
+  }
+}
+dl.admin-list {
+  dt {
+    margin-top: 15px;
+  }
+}
+
+// Tables
+// --------------------------------------------------
+tbody {
+  border-top: none;
+}
+tr.even, 
+tr.odd {
+  background: none;
+  border: none;
+  padding: 0;
+}

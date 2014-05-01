@@ -2,6 +2,24 @@
 // Styles for Views
 // --------------------------------------------------
 
+// Exposed form
+// --------------------------------------------------
+.views-exposed-form .views-submit-button,
+.views-exposed-form .views-reset-button {
+  margin-top: 0;
+  margin-right: 8px;
+}
+
+// Views bulk operation
+// --------------------------------------------------
+.vbo-views-form {
+  .fieldset-wrapper {
+    input {
+      margin-right: 10px;
+    }
+  }
+}
+
 // Administration views.
 // --------------------------------------------------
 #content {

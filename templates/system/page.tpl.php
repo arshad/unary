@@ -20,7 +20,7 @@
         <h1><?php print $title; ?></h1>
       <?php endif; ?>
 
-      <?php if ($tabs): ?>
+      <?php if ($primary_tabs): ?>
         <?php print render($primary_tabs); ?>
       <?php endif; ?>
 
@@ -28,19 +28,21 @@
   </div><!-- /#page-header -->
 
   
-  <div id="tabs-wrapper" class="clearfix">
-    <div class="container">
-      <?php if ($action_links): ?>
-        <ul class="action-links">
-          <?php print render($action_links); ?>
-        </ul>
-      <?php endif; ?>
-      
-      <?php if ($tabs): ?>      
-        <?php print render($secondary_tabs); ?>
-      <?php endif; ?>
-    </div>
-  </div><!-- /#tabs-wrapper -->
+  <?php if ($secondary_tabs || $action_links): ?>
+    <div id="tabs-wrapper" class="clearfix">
+      <div class="container">
+        <?php if ($action_links): ?>
+          <ul class="action-links">
+            <?php print render($action_links); ?>
+          </ul>
+        <?php endif; ?>
+
+        <?php if ($secondary_tabs): ?>      
+          <?php print render($secondary_tabs); ?>
+        <?php endif; ?>
+      </div>
+    </div><!-- /#tabs-wrapper -->
+  <?php endif; ?>
 
   <div id="main" class="main">
     <div class="container">
